@@ -31,7 +31,7 @@ app
     const height = parseInt(r.query.height);
     sharp("./img/ALX_ICON.png")
       .resize(width, height)
-      .toFile("./img/output.png", (err, info) => {
+      .toFile("./img/photo-recommendation.png", (err, info) => {
         r.res.download("./img/output.png");
       });
   })
